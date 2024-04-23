@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab3_02</string>
+    <string-array name="dropdown_options_array">
+        <item>HTTT</item>
+        <item>KHMT</item>
+        <item>KTPM</item>
+        <item>KHDL</item>
+        <item>ATTT</item>
+        <item>TMDT</item>
+    </string-array>
+</resources>

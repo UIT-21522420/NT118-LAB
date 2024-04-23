@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_student_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgStudent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margin_basex2"
+        android:background="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toEndOf="@id/imgStudent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvMssv"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/imgStudent"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintTop_toBottomOf="@id/tvMssv"
+        app:layout_constraintStart_toEndOf="@id/imgStudent"
+        />
+
+    <TextView
+        android:id="@+id/tvKhoa"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        app:layout_constraintStart_toEndOf="@id/imgStudent"
+        />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:layout_marginStart="@dimen/margin_base"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/btnSua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

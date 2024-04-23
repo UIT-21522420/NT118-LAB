@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa sinh viên"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:paddingStart="@dimen/margin_basex2"
+        android:paddingTop="@dimen/margin_basex2"
+        android:paddingBottom="@dimen/margin_basex2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên:"
+        android:textSize="20dp"
+        android:paddingTop="@dimen/margin_basex2"
+        android:paddingBottom="@dimen/margin_basex2"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_marginBottom="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label"
+        />
+
+    <TextView
+        android:id="@+id/tvMssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSSV:"
+        android:textSize="20dp"
+        android:paddingTop="@dimen/margin_basex2"
+        android:paddingBottom="@dimen/margin_basex2"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="20dp"
+        android:paddingTop="@dimen/margin_basex2"
+        android:paddingBottom="@dimen/margin_basex2"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMssv"
+        />
+
+    <TextView
+        android:id="@+id/tvKhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khoa:"
+        android:textSize="20dp"
+        android:paddingTop="@dimen/margin_basex2"
+        android:paddingEnd="20dp"
+        android:paddingBottom="@dimen/margin_basex2"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toEndOf="@id/tvKhoa"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvMssv2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toEndOf="@id/tvKhoa"
+        app:layout_constraintTop_toTopOf="@id/tvMssv"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toEndOf="@id/tvKhoa"
+        app:layout_constraintTop_toTopOf="@id/tvEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerKhoa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_marginStart="@dimen/margin_basex2"
+        app:layout_constraintStart_toEndOf="@id/tvKhoa"
+        app:layout_constraintTop_toTopOf="@id/tvKhoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvKhoa"
+        />
+
+    <Button
+        android:id="@+id/btnEditStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/margin_basex2"
+        app:layout_constraintTop_toBottomOf="@id/tvKhoa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
